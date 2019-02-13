@@ -39,5 +39,28 @@ addButton.addEventListener("click", function() {
     });
     li.append(newTask, trashIcon);
     ulist.appendChild(li); //append new bullet point to unordered list
+    input.value = "";
+  }
+});
+
+input.addEventListener("keydown", function(event) {
+  //   console.log("the event object: ", event);
+  if (event.which !== 13) return;
+  //   console.log("hello");
+  const li = document.createElement("li");
+  const newTask = document.createElement("span");
+  const trashIcon = document.createElement("i");
+  trashIcon.classList.add("fas", "fa-trash");
+  if (input.value !== "") {
+    newTask.textContent = input.value; //change li text content to input
+    newTask.addEventListener("click", function() {
+      newTask.classList.toggle("done");
+    });
+    trashIcon.addEventListener("click", function() {
+      li.remove();
+    });
+    li.append(newTask, trashIcon);
+    ulist.appendChild(li); //append new bullet point to unordered list
+    input.value = "";
   }
 });
