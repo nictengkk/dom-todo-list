@@ -45,7 +45,7 @@ addButton.addEventListener("click", function() {
 
 input.addEventListener("keydown", function(event) {
   //   console.log("the event object: ", event);
-  if (event.which !== 13) return;
+  if (event.which !== 13) return; //if button pressed is not enter because event.which === 13 is a key value property of keydown event for enter key.
   //   console.log("hello");
   const li = document.createElement("li");
   const newTask = document.createElement("span");
