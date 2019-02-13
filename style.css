@@ -2,7 +2,7 @@ body {
   border: 1px dotted tomato;
   box-sizing: border-box;
   border-width: 0 1px;
-  font-family: sans-serif;
+  font-family: "Luckiest Guy", cursive;
   font-size: 2rem;
   margin: 0 auto;
   max-width: 700px;
@@ -28,7 +28,7 @@ ul li {
   display: inline-block;
   font-size: 20px;
   color: grey;
-  font-family: Helvetica, sans-serif;
+  font-family: "Luckiest Guy", cursive;
 }
 
 #title {
@@ -38,6 +38,7 @@ ul li {
 .input-box {
   width: 400px;
   height: 30px;
+  font-style: italic;
 }
 
 .new-tasks {

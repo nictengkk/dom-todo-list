@@ -1,4 +1,4 @@
-const tasks = ["buy milk", "eat dinner", "nail javascript", "give feedback"];
+const tasks = ["Buy milk", "Eat dinner", "Nail javascript", "Give feedback"];
 
 const input = document.querySelector("input");
 const addButton = document.querySelector("i");
