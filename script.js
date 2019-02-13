@@ -30,9 +30,9 @@ addButton.addEventListener("click", function() {
   const trashIcon = document.createElement("i");
   trashIcon.classList.add("fas", "fa-trash");
   if (input.value !== "") {
-    li.textContent = input.value; //change li text content to input
-    li.addEventListener("click", function() {
-      li.classList.toggle("done");
+    newTask.textContent = input.value; //change li text content to input
+    newTask.addEventListener("click", function() {
+      newTask.classList.toggle("done");
     });
     trashIcon.addEventListener("click", function() {
       li.remove();
